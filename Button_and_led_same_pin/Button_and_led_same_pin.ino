@@ -13,10 +13,10 @@
   Written by Limor Fried/Ladyada for Adafruit Industries.
   BSD license, all text above must be included in any redistribution
  ****************************************************/
-/*
-   MOD by JosephLeung
-   Oct 15, 2016
-*/
+ /*
+  * MOD by JosephLeung
+  * Oct 15, 2016
+  */
 #include <Adafruit_Fingerprint.h>
 #include <SoftwareSerial.h>
 
@@ -46,7 +46,6 @@ void setup() {
 }
 
 void loop() {
-  //if the button is pushed, then enter the enroll procedure
   if (!digitalRead(buttonPin)) {
     Serial.println("Enrolling fingerprint ID: ");
     Serial.print(id);
